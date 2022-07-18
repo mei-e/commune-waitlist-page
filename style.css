@@ -1,0 +1,194 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1em;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f9fe;
+  margin: 0 auto;
+  padding: 1.5em 3em;
+  border-radius: 20px;
+}
+
+header {
+  padding: 0.5em;
+}
+header #menubutton {
+  float: right;
+}
+header #menucontent {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+header #menudesktop {
+  display: none;
+}
+
+#menumobile {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #372865;
+  border-bottom-left-radius: 100%;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+#menumobile a {
+  padding: 0.25em;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #f6f9fe;
+  display: block;
+  text-align: right;
+}
+#menumobile a:active {
+  color: #8e8e8e;
+}
+#menumobile #closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10%;
+  font-size: 50px;
+}
+
+#menucontent {
+  width: 100%;
+  right: 10%;
+}
+
+#learnmore {
+  background-color: #372865;
+  color: #f6f9fe;
+  width: auto;
+  border-radius: 50px;
+  margin-top: 5em;
+  padding: 0.5em;
+}
+#learnmore a {
+  color: #f6f9fe;
+}
+#learnmore a:active {
+  color: #545454;
+}
+#learnmore p {
+  text-align: center;
+  opacity: 0.75;
+}
+
+#text {
+  text-align: center;
+}
+#text h1 {
+  font-size: 3rem;
+  color: #372865;
+}
+#text p {
+  color: #545454;
+}
+
+form {
+  text-align: center;
+}
+form #email, form .join {
+  width: max(90%, 10em);
+}
+form #email {
+  height: 3.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.join {
+  background-color: #372865;
+  color: #f6f9fe;
+  border: none;
+  border-radius: 5px;
+  height: 3.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.join:active {
+  background-color: #545454;
+}
+
+#illustration {
+  display: none;
+}
+
+#companies {
+  margin-top: 5em;
+}
+#companies p {
+  color: #545454;
+}
+
+#companylogo img {
+  margin: 0.5em;
+}
+
+@media only screen and (min-width: 600px) {
+  form .join {
+    width: 25%;
+  }
+  form #email {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  header #menubutton {
+    display: none;
+  }
+  header #menudesktop {
+    display: block;
+    float: right;
+  }
+  header #menudesktop a {
+    text-decoration: none;
+    padding: 0.5em;
+    color: #545454;
+  }
+  header #menudesktop a:active {
+    color: #372865;
+  }
+  #learnmore {
+    width: 50%;
+    padding: 0.5em;
+  }
+  article {
+    display: flex;
+  }
+  article #text, article form {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+  article #text h1, article #text p {
+    margin: 0.5em;
+  }
+  article #illustration {
+    display: block;
+    width: 65%;
+    height: auto;
+  }
+  article #illustration img {
+    width: inherit;
+    float: right;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */

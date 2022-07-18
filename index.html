@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Commune</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <img id="logo" src="./Assets/Logo.svg" alt="logo">
+                <!--mobile and tablet-->
+                <a href="javascript:void(0)" id="menubutton" onclick="openMenu()"><img src="./Assets/Hamburger Menu.svg" alt="menu"></a>
+                <div id="menumobile">
+                    <a href="javascript:void(0)" id="closebtn" onclick="closeMenu()">&times;</a>
+                    <nav id="menucontent">
+                        <a href="#" id="featuresmobile">Features</a>
+                        <a href="#" id="affiliatesmobile">Affiliates</a>
+                        <a href="#" id="pricingmobile">Pricing</a>
+                        <a href="#" id="communitiesmobile">Communities</a>
+                    </nav>
+                </div>
+
+                <!--desktop-->
+                <nav id="menudesktop">
+                    <a href="#" id="featuresdesktop">Features</a>
+                    <a href="#" id="affiliatesdesktop">Affiliates</a>
+                    <a href="#" id="pricingdesktop">Pricing</a>
+                    <a href="#" id="communitiesdesktop">Communities</a>
+                    <input id="joindesktop" class="join" type="submit" value="Join Waitlist">
+                </nav>
+                
+            </header>
+
+            <main>
+                <section id="learnmore">
+                    <p>We are now allowing early-access for users. <a href="#"><strong>Learn more.</strong></a></p>
+                </section>
+                <article>
+                    <section id="text">
+                        <h1>Build a highly engaged community with no effort.</h1>
+                        <p>Commune offers the tools you need to build a highly engaged community with little to no effort. Simply setup your Commune workspace, and manage everything from members to content from one central dashboard.</p>
+                        <form>
+                            <input id="email" type="email" placeholder="Enter your e-mail address" required>
+                            <input id="joinform" class="join" type="submit" value="Join Waitlist">
+                        </form>
+                    </section>
+                    <section id="illustration">
+                        <img src="./Assets/Illustration.png" alt="illustration">
+                    </section>
+                </article>
+                
+                <section id="companies">
+                    <p><strong>Used by these companies:</strong></p>
+                    <div id="companylogo">
+                        <img src="./Assets/Atlassian Icon.svg" alt="atlassian">
+                        <img src="./Assets/Behance Icon.svg" alt="behance">
+                        <img src="./Assets/Bing Icon.svg" alt="bing">
+                        <img src="./Assets/Bitbucket Icon.svg" alt="bitbucket">
+                        <img src="./Assets/Dropbox Icon.svg" alt="dropbox">
+                        <img src="./Assets/Twitch Icon.svg" alt="twitch">
+                        <img src="./Assets/Twitter Icon.svg" alt="twitter">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
